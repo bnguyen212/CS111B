@@ -22,28 +22,32 @@ public class RaffleWinners {
         endNumber = Integer.parseInt(scan.nextLine());
       }
 
-      System.out.println("The winning raffle ticket numbers are:");
-      Random generator = new Random();
-
-      int winner1 = generator.nextInt(endNumber - startNumber + 1) + startNumber;
-      System.out.printf("Winner 1: %s\n", winner1);
-
-      int winner2 = generator.nextInt(endNumber - startNumber + 1) + startNumber;
-      while (winner2 == winner1) {
-        winner2 = generator.nextInt(endNumber - startNumber + 1) + startNumber;
-      }
-      System.out.printf("Winner 2: %s\n", winner2);
-
-      int winner3 = generator.nextInt(endNumber - startNumber + 1) + startNumber;
-      while (winner3 == winner1 || winner3 == winner2) {
-        winner3 = generator.nextInt(endNumber - startNumber + 1) + startNumber;
-      }
-      System.out.printf("Winner 3: %s\n", winner3);
+      select3Winners(startNumber, endNumber);
 
       System.out.println("Do you want to run another raffle? Yes / No (y/n)");
       String decision = scan.nextLine();
       repeat = decision.equalsIgnoreCase("y") || decision.equalsIgnoreCase("yes") ? true : false;
     } while (repeat);
 
+  }
+
+  public static void select3Winners(int start, int end) {
+    System.out.println("The winning raffle ticket numbers are:");
+    Random generator = new Random();
+
+    int winner1 = generator.nextInt(end - start + 1) + start;
+    System.out.printf("Winner 1: %s\n", winner1);
+
+    int winner2 = generator.nextInt(end - start + 1) + start;
+    while (winner2 == winner1) {
+      winner2 = generator.nextInt(end - start + 1) + start;
+    }
+    System.out.printf("Winner 2: %s\n", winner2);
+
+    int winner3 = generator.nextInt(end - start + 1) + start;
+    while (winner3 == winner1 || winner3 == winner2) {
+      winner3 = generator.nextInt(end - start + 1) + start;
+    }
+    System.out.printf("Winner 3: %s\n", winner3);
   }
 }
