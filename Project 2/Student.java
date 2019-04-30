@@ -37,8 +37,14 @@ public class Student {
 	public String toString() {
 		return name + " (" + id + ")";
 	}
-	
 
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Student) {
+			Student student = (Student) obj;
+			return id.equals(student.id);
+		}
+		return false;
+	}
 
-	
 }
