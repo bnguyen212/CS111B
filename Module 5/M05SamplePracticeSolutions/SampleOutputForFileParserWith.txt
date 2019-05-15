@@ -1,0 +1,26 @@
+What is the name of the file?
+nonexistentfile
+File not found.
+0 non-integer values found.
+Integer values found: []
+Average: NaN
+
+
+
+
+What is the name of the file?
+inputdata.txt
+Non-number found: hello
+Non-number found: bye
+Non-number found: @@@
+Non-number found: apple
+Non-number found: banana
+Non-number found: pear
+Non-number found: dog
+Non-number found: cat
+Non-number found: cat
+Non-number found: bird
+Non-number found: bird
+11 non-integer values found.
+Integer values found: [1, 2, 4, 6, 2, 1, 3, 1, 1, 4, 4, 3]
+Average: 2.6666666666666665
