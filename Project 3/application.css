@@ -1,0 +1,65 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+Separator .line {
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+}
+
+.separator {
+    -fx-padding: 0px;
+    -fx-border-insets: 0px;
+    -fx-border-width: 1;
+    -fx-border-color: black;
+}
+
+.controlBox {
+    -fx-alignment: center;
+}
+
+.appName {
+	-fx-font-size: 40;
+	-fx-fill: linear-gradient(from 0% 0% to 100% 100%, repeat, red, green, blue);
+}
+
+.header {
+	-fx-alignment: center;
+	-fx-padding: 5 0 5 0;
+}
+
+.whiteboard {
+	-fx-border-width: 10;
+    -fx-border-color: black;
+}
+
+HBox HBox {
+	-fx-spacing: 10;
+	-fx-alignment: center;
+	-fx-padding: 10 20 10 20;
+}
+
+.color1 {
+	-fx-text-fill: red;
+}
+
+.color1:selected .dot {
+ 	-fx-background-color: red;
+ 	-fx-background-insets: 0;
+}
+
+.color2 {
+	-fx-text-fill: green;
+}
+
+.color2:selected .dot {
+ 	-fx-background-color: green;
+ 	-fx-background-insets: 0;
+}
+
+.color3 {
+	-fx-text-fill: blue;
+} 
+
+.color3:selected .dot {
+ 	-fx-background-color: blue;
+ 	-fx-background-insets: 0;
+}
