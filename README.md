@@ -1,5 +1,7 @@
 # CS 111B - Programming Fundamentals: Java
 
+A 7-week accelerated course in Java
+
 ## Content
 1. Java Basics - Data, Variables, Strings, Methods, Loops, Conditionals
 2. Classes and Objects
